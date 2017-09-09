@@ -1,25 +1,25 @@
-# esn-interview
+# esn-chips
 # API
-## Interview
-### Get interview info
+## Chips
+### Get chips info
 ```
-GET /interview/:id
+GET /chips/:id
 access: *
 ```
-### Interviews list
+### Chips list
 ```
 access: user
-GET /interview
+GET /chips
 query params:
 	[count = 5]: int
 ```
-### Accept event
+### Crack chip
 ```
-GET /interview/:id/accept
+GET /chips/:id/crack
 access: user
 ```
-### Reject event
+### Ignore chip
 ```
-GET /interview/:id/reject
+GET /chips/:id/ignore
 access: user
 ```
