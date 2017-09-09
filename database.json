@@ -1,0 +1,17 @@
+{
+	"defaultEnv": "prod",
+	"prod": {
+		"driver": "pg",
+		"user": "postgres",
+		"password": "postgres",
+		"host": "localhost",
+		"database": "esn_interview"
+	},
+	"test": {
+		"driver": "pg",
+		"user": "postgres",
+		"password": "postgres",
+		"host": "localhost",
+		"database": "esn_interview_test"
+	}
+}

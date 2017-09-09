@@ -1,0 +1,45 @@
+{
+  "name": "esn-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cross-env NODE_ENV=test mocha",
+    "lint": "./node_modules/.bin/eslint --format=node_modules/eslint-formatter-pretty ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasteraVodoProvodchiki/esn-auth.git"
+  },
+  "author": "evilfant",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "connect-memcached": "^0.2.0",
+    "cookie-parser": "^1.4.3",
+    "db-migrate": "^0.10.0-beta.20",
+    "db-migrate-pg": "^0.1.11",
+    "esn-lib": "./vendors/esn-lib",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "express-validator": "^2.21.0",
+    "mocha": "^3.1.2",
+    "pg": "^6.1.0",
+    "pg-transaction": "^1.0.4",
+    "request": "^2.78.0"
+  },
+  "bugs": {
+    "url": "https://github.com/MasteraVodoProvodchiki/esn-auth/issues"
+  },
+  "homepage": "https://github.com/MasteraVodoProvodchiki/esn-auth#readme",
+  "devDependencies": {
+    "cross-env": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-node": "^1.6.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-mocha": "^4.9.0",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.11"
+  }
+}

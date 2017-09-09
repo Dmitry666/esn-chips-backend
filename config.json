@@ -1,0 +1,22 @@
+{
+	"port": 5656,
+	"protocol": "https",
+	"host": "localhost",
+
+	"sessionSecret": "a7956a68577ee93643b61afc7ec9a0bb358533ca",
+	"secret": "2",
+	"distributedAddress": "https://localhost:5555",
+
+	"memchashed": {
+		"hosts": [
+			"127.0.0.1:11211"
+		],
+		"secret": "7c81cada694ce2288f48e7fa577d19e79774f4a5"
+	},
+
+	"nats": {
+		"servers": [
+			"nats://127.0.0.1:4222"
+		]
+	}
+}
