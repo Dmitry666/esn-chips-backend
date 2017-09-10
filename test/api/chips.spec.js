@@ -92,7 +92,7 @@ module.exports.test = () => {
 
 			// Delete test data.
 			afterEach(done => {
-				g.db.main.query(`DELETE FROM chips_user WHERE user_id = 1`)
+				g.db.main.query(`DELETE FROM chip_user WHERE user_id = 1`)
 					.then(() => g.db.main.query(`DELETE FROM chip WHERE id IN (${chips.map(chip => chip.id).join(',')})`))
 					.then(() => done())
 					.catch(done)
@@ -126,7 +126,7 @@ module.exports.test = () => {
 
 			// Delete data.
 			afterEach(done => {
-				if (!interview) {
+				if (!chip) {
 					return done()
 				}
 
@@ -151,7 +151,7 @@ module.exports.test = () => {
 				})
 					.then(({response, body}) => {
 						assert.equal(response.statusCode, 200, body)
-						interview = body
+						chip = body
 						done()
 					})
 					.catch(done)
@@ -247,7 +247,7 @@ module.exports.test = () => {
 				})
 					.then(({response, body}) => {
 						assert.equal(response.statusCode, 200, body)
-						assert.equal(body.newValue.answer, 1)
+						assert.equal(body.newValue.count, 1)
 						done()
 					})
 					.catch(done)
@@ -302,7 +302,7 @@ module.exports.test = () => {
 				})
 					.then(({response, body}) => {
 						assert.equal(response.statusCode, 200, body)
-						assert.equal(body.newValue.answer, 2)
+						assert.equal(body.newValue.count, 2)
 						done()
 					})
 					.catch(done)

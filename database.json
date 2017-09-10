@@ -5,13 +5,13 @@
 		"user": "postgres",
 		"password": "postgres",
 		"host": "localhost",
-		"database": "esn_interview"
+		"database": "esn_chip"
 	},
 	"test": {
 		"driver": "pg",
 		"user": "postgres",
 		"password": "postgres",
 		"host": "localhost",
-		"database": "esn_interview_test"
+		"database": "esn_chip_test"
 	}
 }

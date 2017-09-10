@@ -1,5 +1,5 @@
 {
-  "name": "esn-auth",
+  "name": "esn-chips",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/MasteraVodoProvodchiki/esn-auth.git"
   },
-  "author": "evilfant",
+  "author": "dmitry",
   "license": "ISC",
   "dependencies": {
     "async": "^2.4.0",

@@ -1,6 +1,6 @@
 {
 	"port": 5656,
-	"protocol": "https",
+	"protocol": "http",
 	"host": "localhost",
 
 	"sessionSecret": "a7956a68577ee93643b61afc7ec9a0bb358533ca",

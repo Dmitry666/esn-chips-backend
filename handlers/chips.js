@@ -55,7 +55,7 @@ const getChip = (chipID, db = g.db.main) =>
 						FROM chip c
 						WHERE c.id = $1`
 
-		db.query(sql, [interviewID])
+		db.query(sql, [chipID])
 			.then(result => {
 				resolve(result.rows)
 			})
@@ -69,9 +69,9 @@ module.exports.list = (req, res) => {
 	const userID = req.session.userID
 
 	getChips(userID)
-		.then(([chipList]) => {
+		.then((chipList) => {
 
-			//console.log(result)
+			console.log(chipList)
 			res.send(chipList)
 		})
 		.catch(err => {
