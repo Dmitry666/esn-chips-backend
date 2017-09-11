@@ -83,6 +83,7 @@ app.use(expressValidator({
 }))
 
 require(`${__base}/routes/chips`)(app)
+require(`${__base}/routes/dino`)(app)
 
 const start = () => {
 	const server = config.protocol === 'https'

@@ -15,3 +15,10 @@ CREATE TABLE chip_user (
 		REFERENCES chip(id) MATCH SIMPLE
 		ON UPDATE RESTRICT ON DELETE RESTRICT
 );
+
+CREATE TABLE dino (
+    id serial NOT NULL,
+    angry real NOT NULL DEFAULT '1',
+    hungry real NOT NULL DEFAULT '1',
+	CONSTRAINT pk__dino PRIMARY KEY (id)
+);
