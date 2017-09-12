@@ -20,10 +20,10 @@ const SAFE_FIELDS = [
 const getDinoList = (userID, db = g.db.main) =>
 	new Promise((resolve, reject) => {
 
-		let sql = `SELECT s.*
+		let sql = `SELECT d.*
 						FROM dino d`
 
-		db.query(sql, [])
+		db.query(sql)
 			.then(result => {
 
 				resolve(result.rows)
@@ -66,7 +66,7 @@ module.exports.list = (req, res) => {
 	const count = req.query.count && req.query.count > 0 ? Math.min(MAX_COUNT, req.query.count) : DEFAULT_COUNT
 	const userID = req.session.userID
 
-	getChips(userID)
+	getDinoList(userID)
 		.then((dinoList) => {
 
 			console.log(dinoList)
