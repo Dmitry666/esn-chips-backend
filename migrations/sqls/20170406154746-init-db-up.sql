@@ -18,7 +18,9 @@ CREATE TABLE chip_user (
 
 CREATE TABLE dino (
     id serial NOT NULL,
-    angry real NOT NULL DEFAULT '1',
+    angry real NOT NULL DEFAULT '0',
     hungry real NOT NULL DEFAULT '1',
+    sleep real NOT NULL DEFAULT '0',
+    level integer NOT NULL DEFAULT '0',
 	CONSTRAINT pk__dino PRIMARY KEY (id)
 );
