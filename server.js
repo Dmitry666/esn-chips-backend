@@ -82,7 +82,7 @@ app.use(expressValidator({
 	},
 }))
 
-require(`${__base}/routes/chips`)(app)
+require(`${__base}/routes/food`)(app)
 require(`${__base}/routes/dino`)(app)
 
 const start = () => {

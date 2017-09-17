@@ -161,7 +161,11 @@ module.exports.feed = (req, res) => {
 
 	const dinoID = req.params.id
 	const userID = req.session.userID
+	const foodType = 1;
 
+	// anger up
+	// level up
+	// hungry up
 /*
 	updateInterviewAnswer(interviewID, userID, 1)
 		.then((result) => {

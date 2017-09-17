@@ -140,5 +140,5 @@ after(done => {
 		.then(() => done())
 })
 
-require('./api/chips.spec.js').test()
+require('./api/food.spec.js').test()
 require('./api/dino.spec.js').test()

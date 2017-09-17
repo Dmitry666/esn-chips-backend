@@ -1,3 +1,3 @@
-DROP TABLE chip_user;
-DROP TABLE chip;
+DROP TABLE food_user;
+DROP TABLE food;
 DROP TABLE dino;
